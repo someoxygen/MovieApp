@@ -37,7 +37,7 @@ namespace MovieApp.Controllers
             var actorDetails = await _actorsService.GetById(id);
             if (actorDetails == null)
             {
-                return View("Not Found");
+                return View("NotFound");
             }
             return View(actorDetails);
         }

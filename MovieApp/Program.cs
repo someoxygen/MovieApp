@@ -15,6 +15,7 @@ var configuration = new ConfigurationBuilder()
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionString")));
 //builder.Services.AddDbContext<ApplicationDbContext>(x => x.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IActorsService,ActorsService>();
+builder.Services.AddScoped<IProducersService, ProducersService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -18,7 +18,6 @@ namespace MovieApp.Models
         public string FullName { get; set; }
 
         [Display(Name ="About")]
-        [Required(ErrorMessage = "About is required.")]
         public string About { get; set; }
         public List<ActorMovie>? ActorMovies { get; set; }
     }
