@@ -3,7 +3,7 @@ using MovieApp.Models;
 
 namespace MovieApp.Data.Interfaces
 {
-    public interface IProducersService : IEntityBaseRepository<ProducerViewModel>
+    public interface ICinemasService : IEntityBaseRepository<CinemaViewModel>
     {
 
     }

@@ -8,7 +8,7 @@ namespace MovieApp.Models
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Profile Picture URL")]
+        [Display(Name = "Profile Picture")]
         [Required(ErrorMessage ="Profile Picture is required.")]
         public string ProfilePictureUrl { get; set; }
 
